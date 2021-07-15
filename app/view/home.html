@@ -1,0 +1,15 @@
+<section>
+    <h1>Lista de Clientes:</h1>
+    {% for clients in clientes %}
+        <article>
+            <header>
+                <h2><a href="http://localhost/SistemaCadastroCliente/?pagina=post&id={{clients.id_cliente}}"><b>Nome:</b> {{clients.nome_cliente}}</a></h2>
+            </header>
+            <p><b>ID:</b> {{clients.id_cliente}}</p>
+            <p><b>Cidade:</b> {{clients.cidade_cliente}}</p>
+            <p><b>UF:</b> {{clients.uf_cliente}}</p>
+            <br/>
+    <hr>
+        </article>
+    {% endfor %}
+</section>

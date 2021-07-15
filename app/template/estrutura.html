@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #CDC9C9;
+        }
+
+        #corpo{
+            width: 1000px;
+            background-color: #FFF;
+            margin: 0 auto;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+        }
+
+        #topo a{
+            color: #333;
+            text-decoration: none;
+            font: 20px Arial;
+        }
+
+        #topo a:hover{
+            text-decoration: underline;
+        }
+
+        #topo{
+            padding: 20px 25px;
+            border-bottom: 2px solid #CCC;
+        }
+
+        #conteudo{
+            background-color: #FFF;
+            padding: 20px 25px;
+        }
+
+        #conteudo h1{
+            font: 24px Arial;
+            margin-bottom: 20px;
+        }
+
+        #conteudo article{
+            margin-bottom: 20px;
+        }
+
+        article h2 a{
+            font: 22px Arial;
+            color: #333;
+            text-decoration: none;
+        }
+        #links{
+            color: black;
+            text-decoration: none;
+
+        }
+        table a{
+            color: black;
+            text-decoration: none;
+        }
+        table a:hover{
+            text-decoration: underline;
+        }
+
+
+        article h2{
+            margin-bottom: 7px;
+        }
+
+        header h2 a:hover{
+            text-decoration: underline;
+        }
+
+        article p{
+            font: 16px Arial;
+            color: #333;
+        }
+
+        .flutuacaodir{
+            float: right;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div id="corpo">
+        <div id="topo">
+            <header>
+                <nav>
+                    <a href="http://localhost/SistemaCadastroCliente">Home</a>
+
+                    <a href="http://localhost/SistemaCadastroCliente/?pagina=gerenciar" class="flutuacaodir">Gerenciar</a>
+                </nav>
+            </header>
+        </div>
+
+        <div id="conteudo">
+           {{area_dinamica}}
+        </div>
+    </div>
+</body>
+</html>

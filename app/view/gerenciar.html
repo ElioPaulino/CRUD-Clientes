@@ -1,0 +1,27 @@
+<h1>Gerenciador de Clientes: </h1>
+
+<h3><a id="links" href="http://localhost/SistemaCadastroCliente/?pagina=gerenciar&metodo=create">Cadastrar Cliente</a></h3>
+<br>
+<hr>
+<br>
+<table border="2">
+
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Cidade</th>
+        <th>UF</th>
+        <th>Alteração</th>
+        <th>Deleção</th>
+    </tr>
+    {% for clients in clientes %}
+    <tr>
+        <th>{{clients.id_cliente}}</th>
+        <th>{{clients.nome_cliente}}</th>
+        <th>{{clients.cidade_cliente}}</th>
+        <th>{{clients.uf_cliente}}</th>
+        <th><a style="color: blue" href="http://localhost/SistemaCadastroCliente/?pagina=gerenciar&metodo=alter&id={{clients.id_cliente}}">Alterar</a></th>
+        <th><a style="color: red" href="http://localhost/SistemaCadastroCliente/?pagina=gerenciar&metodo=delete&id={{clients.id_cliente}}">Deletar</a></th>
+    </tr>
+    {% endfor %}
+</table>
